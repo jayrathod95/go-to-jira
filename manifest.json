@@ -1,0 +1,32 @@
+{
+  "name": "",
+  "version": "2.0",
+  "description": "Build an Extension!",
+  "permissions": ["activeTab", "declarativeContent", "storage","history"],
+  "options_page": "options.html",
+  /*"options_ui": {
+    "chrome_style": false,
+    "page": "options.html"
+  },*/
+  "omnibox": { "keyword" : "jira" },
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": false
+  },
+  "page_action": {
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "images/jira_icon_16.png",
+      "32": "images/jira_icon_32.png",
+      "48": "images/jira_icon_48.png",
+      "128": "images/jira_icon_128.png"
+    }
+  },
+  "icons": {
+    "16": "images/jira_icon_16.png",
+    "32": "images/jira_icon_32.png",
+    "48": "images/jira_icon_48.png",
+    "128": "images/jira_icon_128.png"
+  },
+  "manifest_version": 2
+}
